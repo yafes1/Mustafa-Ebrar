@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="#faf7f2" />
+  
+  <!-- Subtle inner circle glow -->
+  <circle cx="256" cy="256" r="210" fill="#fff" filter="url(#shadow)" />
+  
+  <!-- Heart Shape -->
+  <path d="M256 410 C160 320 80 250 80 170 C80 110 125 65 185 65 C222 65 248 88 256 100 C264 88 290 65 327 65 C387 65 432 110 432 170 C432 250 352 320 256 410 Z" fill="url(#grad)" />
+  
+  <!-- Coffee Cup in the center of the heart -->
+  <g transform="translate(186, 175) scale(0.7)" fill="#ffffff">
+    <!-- Cup body -->
+    <path d="M40 50 L40 130 C40 160 70 180 100 180 C130 180 160 160 160 130 L160 50 Z" />
+    <!-- Cup handle -->
+    <path d="M160 65 C185 65 195 85 195 105 C195 125 185 145 160 145" stroke="#ffffff" stroke-width="22" stroke-linecap="round" fill="none" />
+    <!-- Steam waves -->
+    <path d="M70 30 Q75 15 70 0" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8" />
+    <path d="M100 35 Q105 18 100 2" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8" />
+    <path d="M130 30 Q135 15 130 0" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8" />
+    <!-- Tiny heart inside cup -->
+    <path d="M100 125 C88 112 75 102 75 90 C75 81 81 75 90 75 C95 75 98 78 100 80 C102 78 105 75 110 75 C119 75 125 81 125 90 C125 102 112 112 100 125 Z" fill="#e11d48" />
+  </g>
+</svg>

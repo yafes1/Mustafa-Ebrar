@@ -1,0 +1,6 @@
+{
+  "name": "Affet Beni & Bir Kahve? | İnteraktif Barışma Sitesi",
+  "description": "Özür dilemek, buzları eritmek ve tatlı bir kahve buluşması ayarlamak için eğlenceli, duygusal ve kaçan butonlu interaktif barışma platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
